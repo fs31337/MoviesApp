@@ -1,0 +1,103 @@
+
+.Movie {
+    width: 250px;
+    height: 370px;    
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+.buscador-movies-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+.buscador-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:30px;
+    max-width: 300px;
+}
+.buscador-movie-titulo{
+    max-width: 250px;
+}
+
+.cnt {
+    padding-top: 10px;
+}
+.form-container {
+    margin-left: 7rem;
+    margin-top: 150px;
+    display:flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    align-items: center;
+}
+
+.form-container button {
+    /* margin-top: 8px; */
+    width: 5rem;
+    height: 2rem;
+    margin-left: 20px;
+    border: 50px;
+}
+.label {
+    padding-right: 10px;
+}
+
+.buscador-component {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.buscador-input {
+    background:none;
+    color:#FFF;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    width: 50rem;
+    height: 2rem;
+    border-radius: 50px;
+}
+
+.line {
+    position: absolute;
+    height: 3px;
+    width:50rem;
+    background:#fff;
+}
+.buscador-button-submit {
+    background:none;
+    width: 10px;
+
+}
+.buscador-lupa{
+    fill: white;
+    width: 2rem;
+    margin-left: -10rem;
+}
+
+.buscador-favorito-button{
+    background:none;
+    border:none;
+    outline: none;
+}
+.estrella {
+    font-size: 20px;
+    transition:1s;
+}
+.estrella:hover{
+    font-size: 30px;
+}
