@@ -6,17 +6,18 @@ import "./Favorites.css";
 
 function ConnectedList(props) {
     return (
+      props.moviesFavourites.length >0 ? (
       <div className="Favoritas">
         <h2>Películas Favoritas</h2>
-        <ul>
+        <div>
           {props.moviesFavourites.map((el) => (
-            <li>
-              <Link to={`/movie/${el.id}`}>{el.title}</Link>
-              <button onClick={() => props.removeMovieFavorite(el.id)}>❌</button>              
-            </li>
+            <div className="Favoritas-li">
+              <Link to={`/movie/${el.id}`} className="Favoritas-link">{el.title}</Link>
+              <button onClick={() => props.removeMovieFavorite(el.id)}>❌</button>
+            </div>
           ))}
-        </ul>
-      </div>
+        </div>
+      </div>) : <div className="Favoritas" ><br/> No tienes Favoritas aún :(</div>
     );
   }
 function mapStateToProps(state) {

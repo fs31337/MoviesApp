@@ -4,4 +4,21 @@
 .Favoritas {
     min-height: 100vh;
     height: 100%;
+    font-size:45px;
+    color: white;
+}
+.Favoritas-li {
+    text-decoration: none;
+    color: white;
+    background-color:color;
+}
+.Favoritas-li button {
+    margin-left: 10px;
+    background-color:none;
+    border: none;
+}
+.Favoritas-link{
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
 }

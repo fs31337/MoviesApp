@@ -58,6 +58,18 @@
 }
 
 .movie-detail {
-    min-height: 100vh;
-    height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.data{
+  color: white;
+  font-size: 2rem;
+}
+.plot {
+  text-align: justify;
+  max-width: 70rem;
 }

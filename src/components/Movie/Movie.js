@@ -15,14 +15,16 @@ function Movie({movieDetail,getMovieDetail,match}) {
   }, []);
   return (
     <article className="movie-detail">
-      <h1>{movieDetail.Title}</h1>
-      <h3>{movieDetail.Year}</h3>
       <figure>
         <img src={movieDetail.Poster}></img>
       </figure>
-      <p>{movieDetail.Plot}</p>
-      <p>{movieDetail.Awards}</p>
-      <p>{movieDetail.Genre}</p>
+      <div className="data">
+        <h1>{movieDetail.Title}</h1>
+        <h3>{movieDetail.Year}</h3>
+        <p>{movieDetail.Genre}</p>
+        <p className="plot">{movieDetail.Plot}</p>
+        <p>{movieDetail.Awards}</p>
+      </div>
     </article>
   );
 }

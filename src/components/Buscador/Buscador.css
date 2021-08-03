@@ -1,7 +1,7 @@
 
 .Movie {
     width: 250px;
-    height: 370px;    
+    height: 370px;
 }
 
 .link {
@@ -97,7 +97,8 @@
 .estrella {
     font-size: 20px;
     transition:1s;
+    cursor: pointer;
 }
 .estrella:hover{
-    font-size: 30px;
+    border: 1px solid yellow;
 }

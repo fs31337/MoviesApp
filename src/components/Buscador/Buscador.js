@@ -16,6 +16,7 @@ function Buscador(props) {
     e.preventDefault();
     props.getMovies(title);
   }
+
     return (
       <div className="buscador-component">
         <form className="form-container" onSubmit={(e) => handleSubmit(e)}>
@@ -40,7 +41,7 @@ function Buscador(props) {
                     <img className="Movie" src={el.Poster}/>
                     <div className="buscador-movie-titulo">{el.Title}</div>
                   </Link>
-                  <button className="buscador-favorito-button" onClick={()=> {props.addMovieFavorite({ title: el.Title ,id: el.imdbID});}}><span className="estrella">⭐</span></button>
+                  <button className="buscador-favorito-button" onClick={()=> {props.addMovieFavorite({ title: el.Title ,id: el.imdbID}); alert("Agregada a Favoritos!")}}><span className="estrella">⭐</span></button>
                 </div>
               ))
               }
